@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425851654}
   - component: {fileID: 425851653}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Area Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 695998479}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 758316883}
   - component: {fileID: 758316885}
   - component: {fileID: 758316886}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.51
+  m_Radius: 0.53
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &758316881
 MeshFilter:
@@ -939,8 +939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2195253b9cbb9468f518edf5b8b063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!82 &758316886
 AudioSource:
   m_ObjectHideFlags: 0

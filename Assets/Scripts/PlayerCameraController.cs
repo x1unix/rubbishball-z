@@ -7,16 +7,11 @@ public class PlayerCameraController : MonoBehaviour {
 	public GameObject player;
 
 	private Vector3 offset;
-	float distance;
-
-	Vector3 playerPrevPos, playerMoveDir;
 
 
 	// Use this for initialization
 	void Start () {
 		offset = transform.position - player.transform.position;
-		distance = offset.magnitude;
-		playerPrevPos = player.transform.position;
 	}
 
 	void Update() {

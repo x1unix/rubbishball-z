@@ -14,8 +14,6 @@ public class EventManager : MonoBehaviour {
 				eventManager = FindObjectOfType (typeof(EventManager)) as EventManager;
 				if (!eventManager) {
 					throw new UnityException ("There needs to be one active EventManager script on a GameObject in your scene");
-					Debug.LogError ("There needs to be one active EventManager script on a GameObject in your scene");
-					return null;
 				}
 				eventManager.Init ();
 
